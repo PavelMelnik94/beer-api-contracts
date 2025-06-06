@@ -1,0 +1,31 @@
+{
+  "name": "@your-org/beer-api-types",
+  "version": "0.1.1",
+  "description": "Auto-generated TypeScript types for Beer API",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "beer",
+    "api",
+    "types",
+    "typescript",
+    "zod"
+  ],
+  "author": "Beer API Team",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "zod": "^3.22.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PavelMelnik94/beer-api-contracts.git"
+  }
+}

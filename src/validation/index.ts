@@ -1,0 +1,24 @@
+// Auto-generated validation index
+export type { UpdateProfileValidationRules } from './updateprofile';
+export type { CreateUserDtoValidationRules } from './createuserdto';
+export type { UserAvatarValidationRules } from './useravatar';
+export type { ProductValidationRules } from './product';
+export type { CreateProductValidationRules } from './createproduct';
+export type { UpdateProductValidationRules } from './updateproduct';
+export type { ProductResponseValidationRules } from './productresponse';
+export type { GetProductsValidationRules } from './getproducts';
+export type { CategoryValidationRules } from './category';
+export type { CreateCategoryValidationRules } from './createcategory';
+export type { UpdateCategoryValidationRules } from './updatecategory';
+export type { CategoryResponseValidationRules } from './categoryresponse';
+export type { CartItemValidationRules } from './cartitem';
+export type { CartValidationRules } from './cart';
+export type { PromoCodeValidationRules } from './promocode';
+export type { UpdateCartItemValidationRules } from './updatecartitem';
+export type { AddToCartValidationRules } from './addtocart';
+export type { BreweryValidationRules } from './brewery';
+export type { CreateBreweryValidationRules } from './createbrewery';
+export type { UpdateBreweryValidationRules } from './updatebrewery';
+export type { BreweryResponseValidationRules } from './breweryresponse';
+export type { RegisterValidationRules } from './register';
+export type { LoginValidationRules } from './login';
