@@ -2,10 +2,7 @@
 import type { UserAvatarType } from '../types/avatar-useravatar';
 
 // Create request type (omit id, createdAt, updatedAt)
-export type CreateUserAvatarRequest = Omit<
-  UserAvatarType,
-  'id' | 'createdAt' | 'updatedAt'
->;
+export type CreateUserAvatarRequest = Omit<UserAvatarType, 'id' | 'createdAt' | 'updatedAt'>;
 
 // Update request type (partial of create request)
 export type UpdateUserAvatarRequest = Partial<CreateUserAvatarRequest>;

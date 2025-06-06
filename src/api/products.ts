@@ -8,11 +8,7 @@ import type { GetProductsType } from '../types/get-products-getproducts';
 export interface ProductsApiEndpoints {
   getById: { params: { id: string }; response: ProductType };
   create: { body: CreateProductType; response: ProductResponseType };
-  update: {
-    body: UpdateProductType;
-    params: { id: string };
-    response: ProductResponseType;
-  };
+  update: { body: UpdateProductType; params: { id: string }; response: ProductResponseType };
   getGetProducts: { query: GetProductsType; response: ProductResponseType };
   delete: { params: { id: string }; response: void };
 }
@@ -23,13 +19,11 @@ export type ProductsApiClient = {
     data: ProductsApiEndpoints[K] extends { body: infer B; params: infer P }
       ? { body: B; params: P }
       : ProductsApiEndpoints[K] extends { body: infer B }
-        ? { body: B }
-        : ProductsApiEndpoints[K] extends { query: infer Q }
-          ? { query: Q }
-          : ProductsApiEndpoints[K] extends { params: infer P }
-            ? { params: P }
-            : never,
-  ) => Promise<
-    ProductsApiEndpoints[K] extends { response: infer R } ? R : void
-  >;
+      ? { body: B }
+      : ProductsApiEndpoints[K] extends { query: infer Q }
+      ? { query: Q }
+      : ProductsApiEndpoints[K] extends { params: infer P }
+      ? { params: P }
+      : never
+  ) => Promise<ProductsApiEndpoints[K] extends { response: infer R } ? R : void>;
 };

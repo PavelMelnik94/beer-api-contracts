@@ -2,10 +2,7 @@
 import type { ProductType } from '../types/product-product';
 
 // Create request type (omit id, createdAt, updatedAt)
-export type CreateProductRequest = Omit<
-  ProductType,
-  'id' | 'createdAt' | 'updatedAt'
->;
+export type CreateProductRequest = Omit<ProductType, 'id' | 'createdAt' | 'updatedAt'>;
 
 // Update request type (partial of create request)
 export type UpdateProductRequest = Partial<CreateProductRequest>;

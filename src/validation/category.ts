@@ -1,15 +1,15 @@
 // Auto-generated validation rules from CategorySchema
 export const CategoryValidation = {
-  name: {
-    type: 'string',
-    min: 1,
-    max: 100,
-    required: true,
+  "name": {
+    "type": "string",
+    "min": 1,
+    "max": 100,
+    "required": true
   },
-  description: {
-    required: true,
-    type: 'string',
-  },
+  "description": {
+    "required": true,
+    "type": "string"
+  }
 };
 
 export type CategoryValidationRules = typeof CategoryValidation;

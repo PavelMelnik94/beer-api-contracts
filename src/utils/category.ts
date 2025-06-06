@@ -2,10 +2,7 @@
 import type { CategoryType } from '../types/category-category';
 
 // Create request type (omit id, createdAt, updatedAt)
-export type CreateCategoryRequest = Omit<
-  CategoryType,
-  'id' | 'createdAt' | 'updatedAt'
->;
+export type CreateCategoryRequest = Omit<CategoryType, 'id' | 'createdAt' | 'updatedAt'>;
 
 // Update request type (partial of create request)
 export type UpdateCategoryRequest = Partial<CreateCategoryRequest>;

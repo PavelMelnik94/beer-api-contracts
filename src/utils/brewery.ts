@@ -2,10 +2,7 @@
 import type { BreweryType } from '../types/brewery-brewery';
 
 // Create request type (omit id, createdAt, updatedAt)
-export type CreateBreweryRequest = Omit<
-  BreweryType,
-  'id' | 'createdAt' | 'updatedAt'
->;
+export type CreateBreweryRequest = Omit<BreweryType, 'id' | 'createdAt' | 'updatedAt'>;
 
 // Update request type (partial of create request)
 export type UpdateBreweryRequest = Partial<CreateBreweryRequest>;

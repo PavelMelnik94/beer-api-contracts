@@ -2,10 +2,7 @@
 import type { LoginType } from '../types/login-login';
 
 // Create request type (omit id, createdAt, updatedAt)
-export type CreateLoginRequest = Omit<
-  LoginType,
-  'id' | 'createdAt' | 'updatedAt'
->;
+export type CreateLoginRequest = Omit<LoginType, 'id' | 'createdAt' | 'updatedAt'>;
 
 // Update request type (partial of create request)
 export type UpdateLoginRequest = Partial<CreateLoginRequest>;

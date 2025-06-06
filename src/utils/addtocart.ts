@@ -2,10 +2,7 @@
 import type { AddToCartType } from '../types/add-to-cart-adcart';
 
 // Create request type (omit id, createdAt, updatedAt)
-export type CreateAddToCartRequest = Omit<
-  AddToCartType,
-  'id' | 'createdAt' | 'updatedAt'
->;
+export type CreateAddToCartRequest = Omit<AddToCartType, 'id' | 'createdAt' | 'updatedAt'>;
 
 // Update request type (partial of create request)
 export type UpdateAddToCartRequest = Partial<CreateAddToCartRequest>;

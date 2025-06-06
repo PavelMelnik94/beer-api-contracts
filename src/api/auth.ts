@@ -14,11 +14,11 @@ export type AuthApiClient = {
     data: AuthApiEndpoints[K] extends { body: infer B; params: infer P }
       ? { body: B; params: P }
       : AuthApiEndpoints[K] extends { body: infer B }
-        ? { body: B }
-        : AuthApiEndpoints[K] extends { query: infer Q }
-          ? { query: Q }
-          : AuthApiEndpoints[K] extends { params: infer P }
-            ? { params: P }
-            : never,
+      ? { body: B }
+      : AuthApiEndpoints[K] extends { query: infer Q }
+      ? { query: Q }
+      : AuthApiEndpoints[K] extends { params: infer P }
+      ? { params: P }
+      : never
   ) => Promise<AuthApiEndpoints[K] extends { response: infer R } ? R : void>;
 };

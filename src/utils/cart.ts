@@ -2,10 +2,7 @@
 import type { CartType } from '../types/zod-schemas-cart';
 
 // Create request type (omit id, createdAt, updatedAt)
-export type CreateCartRequest = Omit<
-  CartType,
-  'id' | 'createdAt' | 'updatedAt'
->;
+export type CreateCartRequest = Omit<CartType, 'id' | 'createdAt' | 'updatedAt'>;
 
 // Update request type (partial of create request)
 export type UpdateCartRequest = Partial<CreateCartRequest>;

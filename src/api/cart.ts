@@ -9,11 +9,7 @@ export interface CartApiEndpoints {
   getById: { params: { id: string }; response: CartItemType };
   getCartById: { params: { id: string }; response: CartType };
   getPromoCodeById: { params: { id: string }; response: PromoCodeType };
-  update: {
-    body: UpdateCartItemType;
-    params: { id: string };
-    response: UpdateCartItemType;
-  };
+  update: { body: UpdateCartItemType; params: { id: string }; response: UpdateCartItemType };
   getAddToCartById: { params: { id: string }; response: AddToCartType };
   delete: { params: { id: string }; response: void };
 }
@@ -24,11 +20,11 @@ export type CartApiClient = {
     data: CartApiEndpoints[K] extends { body: infer B; params: infer P }
       ? { body: B; params: P }
       : CartApiEndpoints[K] extends { body: infer B }
-        ? { body: B }
-        : CartApiEndpoints[K] extends { query: infer Q }
-          ? { query: Q }
-          : CartApiEndpoints[K] extends { params: infer P }
-            ? { params: P }
-            : never,
+      ? { body: B }
+      : CartApiEndpoints[K] extends { query: infer Q }
+      ? { query: Q }
+      : CartApiEndpoints[K] extends { params: infer P }
+      ? { params: P }
+      : never
   ) => Promise<CartApiEndpoints[K] extends { response: infer R } ? R : void>;
 };

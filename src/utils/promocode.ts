@@ -2,10 +2,7 @@
 import type { PromoCodeType } from '../types/zod-schemas-promocode';
 
 // Create request type (omit id, createdAt, updatedAt)
-export type CreatePromoCodeRequest = Omit<
-  PromoCodeType,
-  'id' | 'createdAt' | 'updatedAt'
->;
+export type CreatePromoCodeRequest = Omit<PromoCodeType, 'id' | 'createdAt' | 'updatedAt'>;
 
 // Update request type (partial of create request)
 export type UpdatePromoCodeRequest = Partial<CreatePromoCodeRequest>;

@@ -7,11 +7,7 @@ import type { BreweryResponseType } from '../types/brewery-breweryresponse';
 export interface BreweriesApiEndpoints {
   getById: { params: { id: string }; response: BreweryType };
   create: { body: CreateBreweryType; response: BreweryResponseType };
-  update: {
-    body: UpdateBreweryType;
-    params: { id: string };
-    response: BreweryResponseType;
-  };
+  update: { body: UpdateBreweryType; params: { id: string }; response: BreweryResponseType };
   delete: { params: { id: string }; response: void };
 }
 
@@ -21,13 +17,11 @@ export type BreweriesApiClient = {
     data: BreweriesApiEndpoints[K] extends { body: infer B; params: infer P }
       ? { body: B; params: P }
       : BreweriesApiEndpoints[K] extends { body: infer B }
-        ? { body: B }
-        : BreweriesApiEndpoints[K] extends { query: infer Q }
-          ? { query: Q }
-          : BreweriesApiEndpoints[K] extends { params: infer P }
-            ? { params: P }
-            : never,
-  ) => Promise<
-    BreweriesApiEndpoints[K] extends { response: infer R } ? R : void
-  >;
+      ? { body: B }
+      : BreweriesApiEndpoints[K] extends { query: infer Q }
+      ? { query: Q }
+      : BreweriesApiEndpoints[K] extends { params: infer P }
+      ? { params: P }
+      : never
+  ) => Promise<BreweriesApiEndpoints[K] extends { response: infer R } ? R : void>;
 };
