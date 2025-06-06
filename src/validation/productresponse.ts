@@ -49,6 +49,10 @@ export const ProductResponseValidation = {
     "type": "unknown",
     "required": true
   },
+  "averageRating": {
+    "required": true,
+    "type": "unknown"
+  },
   "createdAt": {
     "type": "unknown",
     "required": true

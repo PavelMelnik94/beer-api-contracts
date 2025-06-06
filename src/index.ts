@@ -5,8 +5,12 @@
 // 📋 Base Types
 // ===========================================
 export type { UpdateProfileType } from './types/update-profile-updateprofile';
+export type { ToggleFavoriteType } from './types/favorite-togglefavorite';
+export type { FavoriteType } from './types/favorite-favorite';
 export type { CreateUserDtoType } from './types/create-user-createuser';
 export type { UserAvatarType } from './types/avatar-useravatar';
+export type { RateProductType } from './types/rating-rateproduct';
+export type { ProductRatingType } from './types/rating-productrating';
 export type { ProductType } from './types/product-product';
 export type { CreateProductType } from './types/product-createproduct';
 export type { UpdateProductType } from './types/product-updateproduct';
@@ -38,8 +42,12 @@ export type { ProductSortFieldsType } from './enums/productsortfields';
 // ✅ Validation Rules
 // ===========================================
 export type { UpdateProfileValidationRules } from './validation/updateprofile';
+export type { ToggleFavoriteValidationRules } from './validation/togglefavorite';
+export type { FavoriteValidationRules } from './validation/favorite';
 export type { CreateUserDtoValidationRules } from './validation/createuserdto';
 export type { UserAvatarValidationRules } from './validation/useravatar';
+export type { RateProductValidationRules } from './validation/rateproduct';
+export type { ProductRatingValidationRules } from './validation/productrating';
 export type { ProductValidationRules } from './validation/product';
 export type { CreateProductValidationRules } from './validation/createproduct';
 export type { UpdateProductValidationRules } from './validation/updateproduct';
@@ -64,7 +72,11 @@ export type { LoginValidationRules } from './validation/login';
 // ===========================================
 // ⚙️ Utility Types
 // ===========================================
+export type { CreateToggleFavoriteRequest } from './utils/togglefavorite';
+export type { CreateFavoriteRequest } from './utils/favorite';
 export type { CreateUserAvatarRequest } from './utils/useravatar';
+export type { CreateRateProductRequest } from './utils/rateproduct';
+export type { CreateProductRatingRequest } from './utils/productrating';
 export type { CreateProductRequest } from './utils/product';
 export type { CreateCategoryRequest } from './utils/category';
 export type { CreateCartItemRequest } from './utils/cartitem';

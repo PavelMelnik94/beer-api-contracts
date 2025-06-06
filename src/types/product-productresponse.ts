@@ -26,6 +26,7 @@ export type ProductResponseType = {
         createdAt: Date | string;
         updatedAt: Date | string;
     };
+    averageRating?: (number | null) | undefined;
     createdAt: Date | string;
     updatedAt: Date | string;
 };
