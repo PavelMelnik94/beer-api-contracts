@@ -7,24 +7,24 @@ export const CreateBreweryValidation = {
     "required": true
   },
   "description": {
-    "required": true,
-    "type": "unknown"
+    "type": "unknown",
+    "required": true
   },
   "shortDescription": {
-    "required": true,
-    "type": "unknown"
+    "type": "unknown",
+    "required": true
   },
   "location": {
-    "required": true,
-    "type": "unknown"
+    "type": "unknown",
+    "required": true
   },
   "website": {
-    "required": true,
-    "type": "unknown"
+    "type": "unknown",
+    "required": true
   },
   "logo": {
-    "required": true,
-    "type": "unknown"
+    "type": "unknown",
+    "required": true
   }
 };
 

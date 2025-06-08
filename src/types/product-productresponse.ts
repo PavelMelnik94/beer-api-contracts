@@ -11,20 +11,20 @@ export type ProductResponseType = {
     isDiscount: boolean;
     images: string[];
     categories: {
-        id: string;
         name: string;
         description: string | null;
+        id: string;
         createdAt: Date | string;
         updatedAt: Date | string;
     }[];
     brewery: {
-        id: string;
         name: string;
         description: string | null;
         location: string | null;
         website: string | null;
         shortDescription: string | null;
         logo: string | null;
+        id: string;
         createdAt: Date | string;
         updatedAt: Date | string;
     };

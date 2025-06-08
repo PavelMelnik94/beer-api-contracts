@@ -15,15 +15,15 @@ export const BreweryResponseValidation = {
     "type": "unknown",
     "required": true
   },
+  "shortDescription": {
+    "type": "unknown",
+    "required": true
+  },
   "location": {
     "type": "unknown",
     "required": true
   },
   "website": {
-    "type": "unknown",
-    "required": true
-  },
-  "shortDescription": {
     "type": "unknown",
     "required": true
   },
