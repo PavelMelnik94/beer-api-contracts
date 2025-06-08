@@ -5,6 +5,7 @@ import type { ProductType } from '../types/product-product';
 import type { CreateProductType } from '../types/product-createproduct';
 import type { UpdateProductType } from '../types/product-updateproduct';
 import type { ProductResponseType } from '../types/product-productresponse';
+import type { ProductStatsType } from '../types/product-productstats';
 import type { GetProductsType } from '../types/get-products-getproducts';
 
 export interface ProductsApiEndpoints {
@@ -13,6 +14,7 @@ export interface ProductsApiEndpoints {
   getProductById: { params: { id: string }; response: ProductType };
   create: { body: CreateProductType; response: ProductResponseType };
   update: { body: UpdateProductType; params: { id: string }; response: ProductResponseType };
+  getProductStatsById: { params: { id: string }; response: ProductStatsType };
   getGetProducts: { query: GetProductsType; response: ProductResponseType };
   delete: { params: { id: string }; response: void };
 }

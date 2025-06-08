@@ -1,5 +1,10 @@
 // Auto-generated validation rules from BreweryResponseSchema
 export const BreweryResponseValidation = {
+  "id": {
+    "type": "string",
+    "format": "uuid",
+    "required": true
+  },
   "name": {
     "type": "string",
     "min": 1,
@@ -7,21 +12,23 @@ export const BreweryResponseValidation = {
     "required": true
   },
   "description": {
-    "required": true,
-    "type": "string"
+    "type": "unknown",
+    "required": true
   },
   "location": {
-    "required": true,
-    "type": "string"
+    "type": "unknown",
+    "required": true
   },
   "website": {
-    "required": true,
-    "type": "string",
-    "format": "url"
+    "type": "unknown",
+    "required": true
   },
-  "id": {
-    "type": "string",
-    "format": "uuid",
+  "shortDescription": {
+    "type": "unknown",
+    "required": true
+  },
+  "logo": {
+    "type": "unknown",
     "required": true
   },
   "createdAt": {

@@ -8,16 +8,23 @@ export const UpdateBreweryValidation = {
   },
   "description": {
     "required": true,
-    "type": "string"
+    "type": "unknown"
+  },
+  "shortDescription": {
+    "required": true,
+    "type": "unknown"
   },
   "location": {
     "required": true,
-    "type": "string"
+    "type": "unknown"
   },
   "website": {
     "required": true,
-    "type": "string",
-    "format": "url"
+    "type": "unknown"
+  },
+  "logo": {
+    "required": true,
+    "type": "unknown"
   }
 };
 

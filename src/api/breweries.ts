@@ -3,11 +3,13 @@ import type { BreweryType } from '../types/brewery-brewery';
 import type { CreateBreweryType } from '../types/brewery-createbrewery';
 import type { UpdateBreweryType } from '../types/brewery-updatebrewery';
 import type { BreweryResponseType } from '../types/brewery-breweryresponse';
+import type { BreweryStatsType } from '../types/brewery-brewerystats';
 
 export interface BreweriesApiEndpoints {
   getById: { params: { id: string }; response: BreweryType };
   create: { body: CreateBreweryType; response: BreweryResponseType };
   update: { body: UpdateBreweryType; params: { id: string }; response: BreweryResponseType };
+  getBreweryStatsById: { params: { id: string }; response: BreweryStatsType };
   delete: { params: { id: string }; response: void };
 }
 

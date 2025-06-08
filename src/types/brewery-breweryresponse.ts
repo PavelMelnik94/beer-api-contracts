@@ -1,10 +1,12 @@
 // Auto-generated from src/modules/breweries/dto/brewery.dto.ts
 export type BreweryResponseType = {
-    name: string;
-    description?: string | undefined;
-    location?: string | undefined;
-    website?: string | undefined;
     id: string;
+    name: string;
+    description: string | null;
+    location: string | null;
+    website: string | null;
+    shortDescription: string | null;
+    logo: string | null;
     createdAt: Date | string;
     updatedAt: Date | string;
 };

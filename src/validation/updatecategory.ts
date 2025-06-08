@@ -8,7 +8,7 @@ export const UpdateCategoryValidation = {
   },
   "description": {
     "required": true,
-    "type": "string"
+    "type": "unknown"
   }
 };
 

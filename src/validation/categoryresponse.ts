@@ -1,5 +1,10 @@
 // Auto-generated validation rules from CategoryResponseSchema
 export const CategoryResponseValidation = {
+  "id": {
+    "type": "string",
+    "format": "uuid",
+    "required": true
+  },
   "name": {
     "type": "string",
     "min": 1,
@@ -7,12 +12,7 @@ export const CategoryResponseValidation = {
     "required": true
   },
   "description": {
-    "required": true,
-    "type": "string"
-  },
-  "id": {
-    "type": "string",
-    "format": "uuid",
+    "type": "unknown",
     "required": true
   },
   "createdAt": {
