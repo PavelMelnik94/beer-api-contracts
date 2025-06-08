@@ -1,15 +1,17 @@
 // Auto-generated API endpoint types for users
+import type { UserResponseType } from '../types/user-response-userresponse';
 import type { UpdateProfileType } from '../types/update-profile-updateprofile';
 import type { ToggleFavoriteType } from '../types/favorite-togglefavorite';
 import type { FavoriteType } from '../types/favorite-favorite';
 import type { CreateUserDtoType } from '../types/create-user-createuser';
 import type { UserAvatarType } from '../types/avatar-useravatar';
+import type { AddressResponseType } from '../types/address-response-addressresponse';
 
 export interface UsersApiEndpoints {
-  update: { body: UpdateProfileType; params: { id: string }; response: UpdateProfileType };
+  update: { body: UpdateProfileType; params: { id: string }; response: UserResponseType };
   getById: { params: { id: string }; response: ToggleFavoriteType };
   getFavoriteById: { params: { id: string }; response: FavoriteType };
-  create: { body: CreateUserDtoType; response: CreateUserDtoType };
+  create: { body: CreateUserDtoType; response: UserResponseType };
   getUserAvatarById: { params: { id: string }; response: UserAvatarType };
   delete: { params: { id: string }; response: void };
 }

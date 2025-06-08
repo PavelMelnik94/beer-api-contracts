@@ -1,9 +1,11 @@
 // Auto-generated types index
+export type { UserResponseType } from './user-response-userresponse';
 export type { UpdateProfileType } from './update-profile-updateprofile';
 export type { ToggleFavoriteType } from './favorite-togglefavorite';
 export type { FavoriteType } from './favorite-favorite';
 export type { CreateUserDtoType } from './create-user-createuser';
 export type { UserAvatarType } from './avatar-useravatar';
+export type { AddressResponseType } from './address-response-addressresponse';
 export type { RateProductType } from './rating-rateproduct';
 export type { ProductRatingType } from './rating-productrating';
 export type { ProductType } from './product-product';

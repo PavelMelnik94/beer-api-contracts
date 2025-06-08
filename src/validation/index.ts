@@ -1,9 +1,11 @@
 // Auto-generated validation index
+export type { UserResponseValidationRules } from './userresponse';
 export type { UpdateProfileValidationRules } from './updateprofile';
 export type { ToggleFavoriteValidationRules } from './togglefavorite';
 export type { FavoriteValidationRules } from './favorite';
 export type { CreateUserDtoValidationRules } from './createuserdto';
 export type { UserAvatarValidationRules } from './useravatar';
+export type { AddressResponseValidationRules } from './addressresponse';
 export type { RateProductValidationRules } from './rateproduct';
 export type { ProductRatingValidationRules } from './productrating';
 export type { ProductValidationRules } from './product';

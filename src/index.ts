@@ -4,11 +4,13 @@
 // ===========================================
 // 📋 Base Types
 // ===========================================
+export type { UserResponseType } from './types/user-response-userresponse';
 export type { UpdateProfileType } from './types/update-profile-updateprofile';
 export type { ToggleFavoriteType } from './types/favorite-togglefavorite';
 export type { FavoriteType } from './types/favorite-favorite';
 export type { CreateUserDtoType } from './types/create-user-createuser';
 export type { UserAvatarType } from './types/avatar-useravatar';
+export type { AddressResponseType } from './types/address-response-addressresponse';
 export type { RateProductType } from './types/rating-rateproduct';
 export type { ProductRatingType } from './types/rating-productrating';
 export type { ProductType } from './types/product-product';
@@ -41,11 +43,13 @@ export type { ProductSortFieldsType } from './enums/productsortfields';
 // ===========================================
 // ✅ Validation Rules
 // ===========================================
+export type { UserResponseValidationRules } from './validation/userresponse';
 export type { UpdateProfileValidationRules } from './validation/updateprofile';
 export type { ToggleFavoriteValidationRules } from './validation/togglefavorite';
 export type { FavoriteValidationRules } from './validation/favorite';
 export type { CreateUserDtoValidationRules } from './validation/createuserdto';
 export type { UserAvatarValidationRules } from './validation/useravatar';
+export type { AddressResponseValidationRules } from './validation/addressresponse';
 export type { RateProductValidationRules } from './validation/rateproduct';
 export type { ProductRatingValidationRules } from './validation/productrating';
 export type { ProductValidationRules } from './validation/product';
