@@ -4,4 +4,5 @@ export type { ProductsApiEndpoints } from './products';
 export type { CategoriesApiEndpoints } from './categories';
 export type { CartApiEndpoints } from './cart';
 export type { BreweriesApiEndpoints } from './breweries';
+export type { BlogApiEndpoints } from './blog';
 export type { AuthApiEndpoints } from './auth';
