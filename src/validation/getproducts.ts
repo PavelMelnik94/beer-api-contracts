@@ -13,8 +13,8 @@ export const GetProductsValidation = {
     "type": "enum"
   },
   "categoryIds": {
-    "required": true,
-    "type": "array"
+    "type": "unknown",
+    "required": true
   },
   "breweryId": {
     "required": true,
