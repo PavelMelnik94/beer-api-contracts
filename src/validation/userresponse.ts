@@ -22,6 +22,10 @@ export const UserResponseValidation = {
     "type": "unknown",
     "required": true
   },
+  "orders": {
+    "required": true,
+    "type": "array"
+  },
   "createdAt": {
     "type": "unknown",
     "required": true
