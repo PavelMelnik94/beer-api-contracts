@@ -29,10 +29,6 @@ export const BlogPostResponseValidation = {
     "type": "number",
     "required": true
   },
-  "likedByUserIds": {
-    "type": "array",
-    "required": true
-  },
   "commentsCount": {
     "type": "number",
     "required": true

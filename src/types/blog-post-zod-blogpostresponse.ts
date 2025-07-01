@@ -15,7 +15,6 @@ export type BlogPostResponseType = {
         name: string;
     }[];
     likesCount: number;
-    likedByUserIds: string[];
     commentsCount: number;
     createdAt: Date | string;
     longDescription: string;

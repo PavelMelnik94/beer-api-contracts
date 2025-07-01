@@ -16,7 +16,6 @@ export type PaginatedBlogPostsType = {
             name: string;
         }[];
         likesCount: number;
-        likedByUserIds: string[];
         commentsCount: number;
         createdAt: Date | string;
     }[];

@@ -17,10 +17,6 @@ export const BlogCommentResponseValidation = {
     "type": "number",
     "required": true
   },
-  "likedByUserIds": {
-    "type": "array",
-    "required": true
-  },
   "createdAt": {
     "type": "unknown",
     "required": true

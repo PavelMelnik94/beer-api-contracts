@@ -39,7 +39,6 @@ export type { BlogPostResponseValidationRules } from './blogpostresponse';
 export type { PaginatedBlogPostsValidationRules } from './paginatedblogposts';
 export type { BlogTagResponseValidationRules } from './blogtagresponse';
 export type { BlogLikeResponseValidationRules } from './bloglikeresponse';
-export type { LikeToggleResponseValidationRules } from './liketoggleresponse';
 export type { CreateBlogCommentValidationRules } from './createblogcomment';
 export type { UpdateBlogCommentValidationRules } from './updateblogcomment';
 export type { GetBlogCommentsValidationRules } from './getblogcomments';
