@@ -9,6 +9,7 @@ export type BlogCommentResponseType = {
         avatar: string | null;
     };
     likesCount: number;
+    likedByUserIds: string[];
     createdAt: Date | string;
     updatedAt: Date | string;
 };

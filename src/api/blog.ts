@@ -10,6 +10,7 @@ import type { BlogPostResponseType } from '../types/blog-post-zod-blogpostrespon
 import type { PaginatedBlogPostsType } from '../types/blog-post-zod-paginatedblogposts';
 import type { BlogTagResponseType } from '../types/blog-misc-zod-blogtagresponse';
 import type { BlogLikeResponseType } from '../types/blog-misc-zod-bloglikeresponse';
+import type { LikeToggleResponseType } from '../types/blog-misc-zod-liketoggleresponse';
 import type { CreateBlogCommentType } from '../types/blog-comment-zod-createblogcomment';
 import type { UpdateBlogCommentType } from '../types/blog-comment-zod-updateblogcomment';
 import type { GetBlogCommentsType } from '../types/blog-comment-zod-getblogcomments';
