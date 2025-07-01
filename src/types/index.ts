@@ -39,6 +39,7 @@ export type { BlogPostResponseType } from './blog-post-zod-blogpostresponse';
 export type { PaginatedBlogPostsType } from './blog-post-zod-paginatedblogposts';
 export type { BlogTagResponseType } from './blog-misc-zod-blogtagresponse';
 export type { BlogLikeResponseType } from './blog-misc-zod-bloglikeresponse';
+export type { LikeToggleResponseType } from './blog-misc-zod-liketoggleresponse';
 export type { CreateBlogCommentType } from './blog-comment-zod-createblogcomment';
 export type { UpdateBlogCommentType } from './blog-comment-zod-updateblogcomment';
 export type { GetBlogCommentsType } from './blog-comment-zod-getblogcomments';

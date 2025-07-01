@@ -15,6 +15,7 @@ export type BlogPostSummaryType = {
         name: string;
     }[];
     likesCount: number;
+    likedByUserIds: string[];
     commentsCount: number;
     createdAt: Date | string;
 };

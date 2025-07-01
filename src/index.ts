@@ -44,6 +44,7 @@ export type { BlogPostResponseType } from './types/blog-post-zod-blogpostrespons
 export type { PaginatedBlogPostsType } from './types/blog-post-zod-paginatedblogposts';
 export type { BlogTagResponseType } from './types/blog-misc-zod-blogtagresponse';
 export type { BlogLikeResponseType } from './types/blog-misc-zod-bloglikeresponse';
+export type { LikeToggleResponseType } from './types/blog-misc-zod-liketoggleresponse';
 export type { CreateBlogCommentType } from './types/blog-comment-zod-createblogcomment';
 export type { UpdateBlogCommentType } from './types/blog-comment-zod-updateblogcomment';
 export type { GetBlogCommentsType } from './types/blog-comment-zod-getblogcomments';
@@ -101,6 +102,7 @@ export type { BlogPostResponseValidationRules } from './validation/blogpostrespo
 export type { PaginatedBlogPostsValidationRules } from './validation/paginatedblogposts';
 export type { BlogTagResponseValidationRules } from './validation/blogtagresponse';
 export type { BlogLikeResponseValidationRules } from './validation/bloglikeresponse';
+export type { LikeToggleResponseValidationRules } from './validation/liketoggleresponse';
 export type { CreateBlogCommentValidationRules } from './validation/createblogcomment';
 export type { UpdateBlogCommentValidationRules } from './validation/updateblogcomment';
 export type { GetBlogCommentsValidationRules } from './validation/getblogcomments';
