@@ -6,6 +6,8 @@ export type { CreateRateProductRequest } from './rateproduct';
 export type { CreateProductRatingRequest } from './productrating';
 export type { CreateProductRequest } from './product';
 export type { CreateProductStatsRequest } from './productstats';
+export type { CreateProductCommentAuthorRequest } from './productcommentauthor';
+export type { CreatePaginatedProductCommentsResultRequest } from './paginatedproductcommentsresult';
 export type { CreateOrderItemRequest } from './orderitem';
 export type { CreateOrderRequest } from './order';
 export type { CreatePaginatedOrdersRequest } from './paginatedorders';

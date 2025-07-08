@@ -6,15 +6,24 @@ import type { CreateProductType } from '../types/product-createproduct';
 import type { UpdateProductType } from '../types/product-updateproduct';
 import type { ProductResponseType } from '../types/product-productresponse';
 import type { ProductStatsType } from '../types/product-productstats';
+import type { CreateProductCommentType } from '../types/product-comment-createproductcomment';
+import type { UpdateProductCommentType } from '../types/product-comment-updateproductcomment';
+import type { GetProductCommentsType } from '../types/product-comment-getproductcomments';
+import type { ProductCommentAuthorType } from '../types/product-comment-productcommentauthor';
+import type { ProductCommentResponseType } from '../types/product-comment-productcommentresponse';
+import type { PaginatedProductCommentsResultType } from '../types/product-comment-paginatedproductcommentsresult';
 import type { GetProductsType } from '../types/get-products-getproducts';
 
 export interface ProductsApiEndpoints {
   getById: { params: { id: string }; response: RateProductType };
   getProductRatingById: { params: { id: string }; response: ProductRatingType };
   getProductById: { params: { id: string }; response: ProductType };
-  create: { body: CreateProductType; response: ProductResponseType };
-  update: { body: UpdateProductType; params: { id: string }; response: ProductResponseType };
+  create: { body: CreateProductCommentType; response: ProductResponseType };
+  update: { body: UpdateProductCommentType; params: { id: string }; response: ProductResponseType };
   getProductStatsById: { params: { id: string }; response: ProductStatsType };
+  getGetProductComments: { query: GetProductCommentsType; response: ProductResponseType };
+  getProductCommentAuthorById: { params: { id: string }; response: ProductCommentAuthorType };
+  getPaginatedProductCommentsResultById: { params: { id: string }; response: PaginatedProductCommentsResultType };
   getGetProducts: { query: GetProductsType; response: ProductResponseType };
   delete: { params: { id: string }; response: void };
 }
