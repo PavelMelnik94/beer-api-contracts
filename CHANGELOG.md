@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.83] - 2025-07-10
+
+### Fixed
+
+- Auto-generated types from Beer API schemas
+- Updated type definitions and validation schemas
+- Enhanced utility types and API interfaces
+
+
 ## [0.1.82] - 2025-07-10
 
 ### Fixed
