@@ -1,6 +1,6 @@
 {
   "name": "@your-org/beer-api-types",
-  "version": "0.1.84",
+  "version": "0.1.85",
   "description": "Auto-generated TypeScript types for Beer API",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
