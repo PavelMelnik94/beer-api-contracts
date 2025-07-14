@@ -5,6 +5,8 @@
 // 📋 Base Types
 // ===========================================
 export type { UserResponseType } from './types/user-response-userresponse';
+export type { UserAddressProfileType } from './types/user-profile-response-useraddressprofile';
+export type { UserProfileResponseType } from './types/user-profile-response-userprofileresponse';
 export type { UpdateProfileType } from './types/update-profile-updateprofile';
 export type { ToggleFavoriteType } from './types/favorite-togglefavorite';
 export type { FavoriteType } from './types/favorite-favorite';
@@ -81,6 +83,8 @@ export type { ProductSortFieldsType } from './enums/productsortfields';
 // ✅ Validation Rules
 // ===========================================
 export type { UserResponseValidationRules } from './validation/userresponse';
+export type { UserAddressProfileValidationRules } from './validation/useraddressprofile';
+export type { UserProfileResponseValidationRules } from './validation/userprofileresponse';
 export type { UpdateProfileValidationRules } from './validation/updateprofile';
 export type { ToggleFavoriteValidationRules } from './validation/togglefavorite';
 export type { FavoriteValidationRules } from './validation/favorite';
@@ -150,6 +154,7 @@ export type { LoginValidationRules } from './validation/login';
 // ===========================================
 // ⚙️ Utility Types
 // ===========================================
+export type { CreateUserAddressProfileRequest } from './utils/useraddressprofile';
 export type { CreateToggleFavoriteRequest } from './utils/togglefavorite';
 export type { CreateFavoriteRequest } from './utils/favorite';
 export type { CreateUserAvatarRequest } from './utils/useravatar';

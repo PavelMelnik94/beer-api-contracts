@@ -1,4 +1,5 @@
 // Auto-generated utilities index
+export type { CreateUserAddressProfileRequest } from './useraddressprofile';
 export type { CreateToggleFavoriteRequest } from './togglefavorite';
 export type { CreateFavoriteRequest } from './favorite';
 export type { CreateUserAvatarRequest } from './useravatar';

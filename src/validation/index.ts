@@ -1,5 +1,7 @@
 // Auto-generated validation index
 export type { UserResponseValidationRules } from './userresponse';
+export type { UserAddressProfileValidationRules } from './useraddressprofile';
+export type { UserProfileResponseValidationRules } from './userprofileresponse';
 export type { UpdateProfileValidationRules } from './updateprofile';
 export type { ToggleFavoriteValidationRules } from './togglefavorite';
 export type { FavoriteValidationRules } from './favorite';

@@ -1,5 +1,7 @@
 // Auto-generated types index
 export type { UserResponseType } from './user-response-userresponse';
+export type { UserAddressProfileType } from './user-profile-response-useraddressprofile';
+export type { UserProfileResponseType } from './user-profile-response-userprofileresponse';
 export type { UpdateProfileType } from './update-profile-updateprofile';
 export type { ToggleFavoriteType } from './favorite-togglefavorite';
 export type { FavoriteType } from './favorite-favorite';
