@@ -19,6 +19,7 @@ export type UserProfileResponseType = {
     }[];
     likedPostsCount: number;
     likedCommentsCount: number;
+    ordersCount: number;
     createdAt: string;
     updatedAt: string;
 };

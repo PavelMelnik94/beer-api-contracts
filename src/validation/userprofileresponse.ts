@@ -34,6 +34,10 @@ export const UserProfileResponseValidation = {
     "type": "number",
     "required": true
   },
+  "ordersCount": {
+    "type": "number",
+    "required": true
+  },
   "createdAt": {
     "type": "string",
     "required": true
