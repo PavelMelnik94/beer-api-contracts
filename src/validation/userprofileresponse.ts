@@ -45,6 +45,18 @@ export const UserProfileResponseValidation = {
   "updatedAt": {
     "type": "string",
     "required": true
+  },
+  "orders": {
+    "required": true,
+    "type": "array"
+  },
+  "likedPostIds": {
+    "required": true,
+    "type": "array"
+  },
+  "likedCommentIds": {
+    "required": true,
+    "type": "array"
   }
 };
 

@@ -22,4 +22,7 @@ export type UserProfileResponseType = {
     ordersCount: number;
     createdAt: string;
     updatedAt: string;
+    orders?: any[] | undefined;
+    likedPostIds?: string[] | undefined;
+    likedCommentIds?: string[] | undefined;
 };
