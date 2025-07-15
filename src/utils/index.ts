@@ -2,6 +2,7 @@
 export type { CreateUserAddressProfileRequest } from './useraddressprofile';
 export type { CreateToggleFavoriteRequest } from './togglefavorite';
 export type { CreateFavoriteRequest } from './favorite';
+export type { CreateChangePasswordDtoRequest } from './changepassworddto';
 export type { CreateUserAvatarRequest } from './useravatar';
 export type { CreateRateProductRequest } from './rateproduct';
 export type { CreateProductRatingRequest } from './productrating';

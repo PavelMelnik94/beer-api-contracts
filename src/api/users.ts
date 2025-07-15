@@ -6,6 +6,7 @@ import type { UpdateProfileType } from '../types/update-profile-updateprofile';
 import type { ToggleFavoriteType } from '../types/favorite-togglefavorite';
 import type { FavoriteType } from '../types/favorite-favorite';
 import type { CreateUserDtoType } from '../types/create-user-createuser';
+import type { ChangePasswordDtoType } from '../types/change-password-changepassword';
 import type { UserAvatarType } from '../types/avatar-useravatar';
 import type { AddressResponseType } from '../types/address-response-addressresponse';
 
@@ -15,6 +16,7 @@ export interface UsersApiEndpoints {
   getToggleFavoriteById: { params: { id: string }; response: ToggleFavoriteType };
   getFavoriteById: { params: { id: string }; response: FavoriteType };
   create: { body: CreateUserDtoType; response: UserResponseType };
+  getChangePasswordDtoById: { params: { id: string }; response: ChangePasswordDtoType };
   getUserAvatarById: { params: { id: string }; response: UserAvatarType };
   delete: { params: { id: string }; response: void };
 }

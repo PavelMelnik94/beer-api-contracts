@@ -6,6 +6,7 @@ export type { UpdateProfileValidationRules } from './updateprofile';
 export type { ToggleFavoriteValidationRules } from './togglefavorite';
 export type { FavoriteValidationRules } from './favorite';
 export type { CreateUserDtoValidationRules } from './createuserdto';
+export type { ChangePasswordDtoValidationRules } from './changepassworddto';
 export type { UserAvatarValidationRules } from './useravatar';
 export type { AddressResponseValidationRules } from './addressresponse';
 export type { RateProductValidationRules } from './rateproduct';
